@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Coursera Lecture Automator",
+    "version": "1.0",
+    "description": "Automatically skips through Coursera lectures",
+    "author":"Swagat Chand",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.coursera.org/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
